@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Fundação Projeto Pescar</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #3e259e; /* fundo roxo */
+      font-family: "Poppins", Arial, sans-serif;
+      color: white;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    nav {
+      background-color: #2b1976; /* faixa escura no topo */
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    nav a {
+      background: #ff7300;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 50px;
+      box-shadow: 0 6px 0px #b84e00;
+      transition: all 0.2s ease-in-out;
+      font-size: 1.05rem;
+    }
+
+    nav a:hover {
+      background: #ff8c1a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 0px #b84e00;
+    }
+
+    /* SEÇÕES */
+    section {
+      padding: 120px 20px 60px;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    section:nth-child(even) {
+      background-color: #3234b3; /* alterna tom */
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 0 auto 15px;
+      font-size: 1.1rem;
+      color: #f0f0f0;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+
+    .figcaption {
+      margin-top: 8px;
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+
+    /* LISTA DE ALUNOS */
+    #Alunos {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .aluno-nomes {
+      max-width: 500px;
+      margin: 20px auto;
+      text-align: left;
+    }
+
+    .aluno-nomes p {
+      margin: 6px 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .aluno-nomes a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .aluno-nomes a:hover {
+      text-decoration: underline;
+    }
+
+    /* EDUCADORES */
+    #educadores {
+      padding: 80px 20px;
+      background: #2b1976;
+      border-radius: 20px;
+      margin: 40px auto;
+      max-width: 800px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+
+    #educadores h1, #educadores h2 {
+      color: #ffcc00;
+    }
+
+    #educadores a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #educadores a:hover {
+      text-decoration: underline;
+    }
+
+    /* Suavidade na rolagem */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      nav {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      nav a {
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#curso">Sobre o curso</a>
+    <a href="#multimidia">Multimídia</a>
+    <a href="#alunos-nome">Alunos</a>
+    <a href="#educadores">Educadores Sociais</a>
+  </nav>
+
+  <!-- SEÇÕES -->
+  <section id="inicio">
+    <h1>Bem-vindo ao Site da Turma de T.I!</h1>
+    <p>Este é um site trabalhado com memórias, documentários, curiosidades e entre outros.</p>
+    <p>Feito para eternizar as memórias sobre uma das primeiras Turmas de T.I do Pescar em 2025.</p>
+    <p>Venha conhecer mais sobre essa Turma!</p>
+    <img src="turma.png.jpg" alt="Foto de exemplo" width="400">
+  </section>
+
+  <section id="curso">
+    <h1>Sobre o Curso</h1>
+    <p>Primeira Turma de T.I do Pescar!</p>
+  </section>
+
+  <section id="educadores">
+    <h1>Educadores Sociais</h1>
+    <p><a href="https://example.com/educador1" target="_blank">Klaiton Scherer</a></p>
+    <h2>Outros Educadores</h2>
+    <p><a href="https://example.com/educador2" target="_blank">Outros</a></p>
+  </section>
+
+  <section id="multimidia">
+    <h1>Vídeos e Multimídia</h1>
+    <p>Assista aos registros e vídeos que marcaram nossa trajetória.</p>
+    <figure>
+      <img src="b4ee796b-64ce-4af1-bace-b632bf480960.jpg" alt="Turma de TI no passeio da PUCRS" width="600" height="400">
+      <figcaption class="figcaption">Turma de TI no passeio da PUCRS</figcaption>
+    </figure>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jNQXAC9IVRw" frameborder="0" allowfullscreen></iframe>
+  </section>
+ <section id="alunos-nome">
+  <h1>Alunos</h1>
+
+  <div class="aluno-nomes">
+  <div class="alunos-botoes">
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/pedro.html" target="_blank" class="botao-circular"></a>
+      
+      <div class="nome-aluno">pedro jobim</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/rebecca.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Rebecca</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/pedro_carlesco.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Pedro</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/artur_cunha.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Arthur Cunha</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/artur_iam.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Arthur Ian</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/sarah.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Sarah</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/kassia.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Kassia</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/eduarda.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Eduarda</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/matheus_golçalves.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Matheus gonçalves</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/matheus_diogenes.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Mateus diogenes</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/tabata.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Tabata</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/nycolas.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Nycolas</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/felipe.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Felipe</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/bruno.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Bruno</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/ryan.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Ryan</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/hanyer.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Hanyer</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/derick.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Derick</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/guilherme.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Guilherme</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/ana_julia.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Ana julia</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/daniela.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Daniela</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/stefany.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Stefany</div>
+    </div>
+    <div class="aluno-botao">
+      <a href="/projeto_site/links/rafaela.html" target="_blank" class="botao-circular"></a>
+      <div class="nome-aluno">Rafaela</div>
+    </div>
+  </div>
+  </div>
+
+  <p>Descubra fatos interessantes sobre a turma!</p>
+</section>
+
+<style>
+  #Alunos {
+    padding: 20px 40px;
+    color: white;
+    
+  }
+
+  .alunos-botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    margin: 24px 0;
+  }
+  .aluno-botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  .botao-circular {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #ff9800 70%, #ffb74d 100%);
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    border: 3px solid #fff3e0;
+    cursor: pointer;
+    display: block;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 6px;
+    text-decoration: none;
+  }
+  .botao-circular:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 16px rgba(255,152,0,0.25);
+    background: linear-gradient(135deg, #ffb74d 70%, #ff9800 100%);
+  }
+  .nome-aluno {
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 2px;
+    word-break: break-word;
+  }
+</style>
+
+<style>
+   img {
+    display: block;
+    margin: 0 auto;
+  }
+  .figcaption{
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  
+
+</style>
+
+ </body>
+</html>
