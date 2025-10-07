@@ -1,31 +1,87 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/projeto_site/links/links.css">
-
-  <title>Exemplo de Página</title>
-  
-   
-  
+  <title>hanyer - Biografia</title>
 </head>
 <body>
   <header>
-    <h1>Bem-vindo ao Meu Site</h1>
+    <h1>Biografia de hanyer</h1>
   </header>
-
   <main>
-    <p>Clique no botão abaixo para ver uma mensagem:</p>
-    <button onclick="showMessage()">Clique aqui!</button>
-    <div id="message"></div>
-  </main>
+    <section class="bio-container">
+      <img src="../imagens/pedro.jpg" alt="Foto de hanyer" class="bio-foto" onerror="this.style.display='none'">
+      <h2>Sobre hanyer</h2>
+      <p><strong>Nome completo:</strong> hanyer</p>
+      <p><strong>Descrição:</strong> Escreva aqui um pouco sobre o artur, sua história, interesses, sonhos e curiosidades.</p>
+      <h3>Curiosidades</h3>
+      <ul>
+        <li>Curiosidade 1 sobre hanyer.</li>
+        <li>Curiosidade 2 sobre hanyer.</li>
+        <li>Curiosidade 3 sobre hanyer.</li>
+      </ul>
+    </section>
+    <a href="../index.html" class="btn-voltar">Voltar para a turma</a>
 
-  <script>
-    function showMessage() {
-      const messageDiv = document.getElementById('message');
-      messageDiv.textContent = "Você clicou no botão! 🎉";
+  </main>
+  <style>
+    body {
+      background: #3e259e;
+      font-family: 'Poppins', Arial, sans-serif;
+      color: #fff;
     }
-  </script>
+    .bio-container {
+      background: #2b1976;
+      color: #fff;
+      border-radius: 36px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+      max-width: 420px;
+      margin: 40px auto;
+      padding: 40px 28px 32px 28px;
+      text-align: center;
+      border: 4px solid #ff7300;
+    }
+    .bio-foto {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 22px;
+      border: 5px solid #ff7300;
+      background: #fff3e0;
+      box-shadow: 0 4px 16px rgba(255,115,0,0.12);
+    }
+    .btn-voltar {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 12px 32px;
+      background: #ff7300;
+      color: #fff;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.08rem;
+      box-shadow: 0 6px 0px #b84e00;
+      transition: all 0.2s;
+    }
+    .btn-voltar:hover {
+      background: #ff8c1a;
+      box-shadow: 0 8px 0px #b84e00;
+    }
+    ul {
+      background: #3234b3;
+      border-radius: 24px;
+      padding: 18px 18px 18px 32px;
+      margin-top: 18px;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    }
+    h1, h2, h3 {
+      color: #ffcc00;
+      border-radius: 18px;
+    }
+  </style>
 </body>
 </html>
